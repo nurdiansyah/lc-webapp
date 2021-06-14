@@ -4,8 +4,7 @@
   "description": "Web Application Learning Center.",
   "private": true,
   "scripts": {
-    "dev": "run-p routify &&  yarn dev:vite",
-    "dev:ssr": "run-p routify rollup",
+    "dev": "routify -c dev:vite",
     "build": "cross-env NODE_ENV=production yarn build:app",
     "build:app": "routify -b && rollup -c",
     "build:static": "spank",
